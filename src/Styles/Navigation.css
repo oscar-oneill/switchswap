@@ -1,0 +1,17 @@
+.navigation {
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    font-family: var(--fontBold);
+    font-size: 26px;
+    margin-left: 15px;
+}

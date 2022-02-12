@@ -1,0 +1,38 @@
+.tokenSelect {
+    display: none;
+}
+
+.tokenSelect.active {
+    display: flex;
+    height: auto;
+    width: 415px;
+    background-color: var(--glass);
+    color: var(--white);
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.tokenSelect li {
+    height: auto;
+    width: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tokenSelect li:hover {
+    background-color: var(--hover)
+}
+
+.tokenSelect img {
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,84 @@
+:root {
+    --fontRegular: "AtkinsonHyperlegible-Regular";
+    --fontBold: "AtkinsonHyperlegible-Bold";
+    --white: #ffffff;
+    --black: #000000;
+    --purple: #C5BCFF;
+    --green: #97FAD6;
+    --lightgray: #e7e7e7;
+    --mediumgray: #B9C4CD;
+    --darkgray: #7790A6;
+    --glass: #000000e8;
+    --hover: #292929;
+    --error: #ffdbdb;
+    --errorText: #ff0000;
+}
+
+@font-face {
+    font-family: "AtkinsonHyperlegible-Regular";
+    src: url("./assets/fonts/AtkinsonHyperlegible-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AtkinsonHyperlegible-Bold";
+    src: url("./assets/fonts/AtkinsonHyperlegible-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow: -moz-scrollbars-none;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+*::-webkit-scrollbar { 
+  display: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--black);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--black);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--black);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fontRegular);
+}
+
+.app_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
